@@ -4,15 +4,10 @@ export default function Footer() {
       <div className="container mx-auto px-4 py-12">
         <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
           <div className="text-center md:text-left">
-            <p className="font-bold text-lg text-content-dark">DevFreelancer</p>
-            <p className="text-sm">contato@devfreelancer.com</p>
+            <p className="font-bold text-lg text-content-dark">Kelwin Richard</p>
+            <p className="text-sm">richardkelwin0634@gmail.com</p>
           </div>
           <div className="flex justify-center gap-6">
-            <a className="hover:text-primary transition-colors" href="#" aria-label="Twitter">
-              <svg className="h-6 w-6" fill="none" height="24" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.3 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
-              </svg>
-            </a>
             <a className="hover:text-primary transition-colors" href="#" aria-label="LinkedIn">
               <svg className="h-6 w-6" fill="none" height="24" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
@@ -28,7 +23,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-8 border-t border-border-dark/20 pt-8 text-center text-sm">
-          <p>© 2024 DevFreelancer. Todos os direitos reservados.</p>
+          <p>© 2024 KR. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>
