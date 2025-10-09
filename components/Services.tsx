@@ -33,7 +33,7 @@ export default function Services() {
     <section ref={ref as any} className="py-16 sm:py-24 bg-surface-light dark:bg-surface-dark" id="services">
       <div className="container mx-auto px-4">
         <div className={`flex flex-col gap-4 text-center mb-12 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Meus Serviços</h2>
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Nossos Serviços</h2>
           <p className="text-lg text-subtle-light dark:text-subtle-dark">
             Soluções completas para levar seu projeto ao próximo nível.
           </p>
@@ -62,6 +62,11 @@ export default function Services() {
               </div>
             </div>
           ))}
+        </div>
+        <div className="flex justify-center mt-20">
+          <p>
+            Preços sujeitos a avaliação do time.
+          </p>
         </div>
       </div>
     </section>

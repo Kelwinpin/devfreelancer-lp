@@ -12,9 +12,9 @@ export default function Header() {
         <div className="flex items-center justify-between py-4">
           <div className="flex items-center gap-2">
             <Image
-              src="/images/logo-syntri.png"
+              src="/images/logo-arvyn.png"
               alt="DevFreelancer Logo"
-              width={120}
+              width={60}
               height={60}
               className="object-fill"
             />
