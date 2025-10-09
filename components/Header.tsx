@@ -12,7 +12,7 @@ export default function Header() {
         <div className="flex items-center justify-between py-4">
           <div className="flex items-center gap-2">
             <Image
-              src="/images/logo-kr-transparent.png"
+              src="/images/logo-syntri.png"
               alt="DevFreelancer Logo"
               width={120}
               height={60}
@@ -32,16 +32,12 @@ export default function Header() {
           </button>
           <nav className="hidden md:flex items-center gap-6">
             <a className="text-sm font-medium hover:text-primary transition-colors" href="#services">Serviços</a>
-            <a className="text-sm font-medium hover:text-primary transition-colors" href="#portfolio">Portfólio</a>
-            <a className="text-sm font-medium hover:text-primary transition-colors" href="#testimonials">Depoimentos</a>
             <a className="text-sm font-medium hover:text-primary transition-colors" href="#contact">Contato</a>
           </nav>
         </div>
         <div className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'}`}>
           <nav className="pb-4 flex flex-col gap-4">
             <a className="text-sm font-medium hover:text-primary transition-all duration-200 hover:translate-x-2" href="#services" onClick={() => setIsMenuOpen(false)}>Serviços</a>
-            <a className="text-sm font-medium hover:text-primary transition-all duration-200 hover:translate-x-2" href="#portfolio" onClick={() => setIsMenuOpen(false)}>Portfólio</a>
-            <a className="text-sm font-medium hover:text-primary transition-all duration-200 hover:translate-x-2" href="#testimonials" onClick={() => setIsMenuOpen(false)}>Depoimentos</a>
             <a className="text-sm font-medium hover:text-primary transition-all duration-200 hover:translate-x-2" href="#contact" onClick={() => setIsMenuOpen(false)}>Contato</a>
           </nav>
         </div>

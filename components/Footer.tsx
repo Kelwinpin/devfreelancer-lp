@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="container mx-auto px-4 py-12">
         <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
           <div className="text-center md:text-left">
-            <p className="font-bold text-lg text-content-dark">Kelwin Richard</p>
+            <p className="font-bold text-lg text-content-dark">Syntri</p>
             <p className="text-sm">richardkelwin0634@gmail.com</p>
           </div>
           <div className="flex justify-center gap-6">
@@ -23,7 +23,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-8 border-t border-border-dark/20 pt-8 text-center text-sm">
-          <p>© 2024 KR. Todos os direitos reservados.</p>
+          <p>© 2024 Syntri. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>

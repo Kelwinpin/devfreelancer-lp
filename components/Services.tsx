@@ -1,4 +1,7 @@
+'use client'
+
 import Image from 'next/image'
+import { useScrollAnimation } from '@/hooks/useScrollAnimation'
 
 const services = [
   {
@@ -24,10 +27,12 @@ const services = [
 ]
 
 export default function Services() {
+  const { ref, isVisible } = useScrollAnimation(0.2)
+
   return (
-    <section className="py-16 sm:py-24 bg-surface-light dark:bg-surface-dark" id="services">
+    <section ref={ref as any} className="py-16 sm:py-24 bg-surface-light dark:bg-surface-dark" id="services">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col gap-4 text-center mb-12">
+        <div className={`flex flex-col gap-4 text-center mb-12 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Meus Serviços</h2>
           <p className="text-lg text-subtle-light dark:text-subtle-dark">
             Soluções completas para levar seu projeto ao próximo nível.
@@ -35,7 +40,11 @@ export default function Services() {
         </div>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
           {services.map((service, index) => (
-            <div key={index} className="flex items-start gap-6">
+            <div
+              key={index}
+              className={`flex items-start gap-6 p-6 rounded-xl bg-background-light dark:bg-background-dark transition-all duration-700 hover:scale-105 hover:shadow-xl ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+              style={{ transitionDelay: `${index * 150}ms` }}
+            >
               <div className="flex-shrink-0 relative w-16 h-16">
                 <Image
                   className="rounded-lg object-cover"
