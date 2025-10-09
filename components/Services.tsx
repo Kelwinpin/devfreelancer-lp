@@ -30,7 +30,7 @@ export default function Services() {
   const { ref, isVisible } = useScrollAnimation(0.2)
 
   return (
-    <section ref={ref as any} className="py-16 sm:py-24 bg-surface-light dark:bg-surface-dark" id="services">
+    <section ref={ref} className="py-16 sm:py-24 bg-surface-light dark:bg-surface-dark" id="services">
       <div className="container mx-auto px-4">
         <div className={`flex flex-col gap-4 text-center mb-12 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Nossos Serviços</h2>

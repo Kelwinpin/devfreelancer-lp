@@ -7,7 +7,7 @@ export default function Hero() {
   const { ref, isVisible } = useScrollAnimation(0.2)
 
   return (
-    <section ref={ref as any} className="py-16 sm:py-24">
+    <section ref={ref} className="py-16 sm:py-24">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:items-center">
           <div className={`flex flex-col gap-6 text-center lg:text-left transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
